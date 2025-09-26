@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydetails"
+description = "Gets the details of a python package from PyPI and TestPyPI"
+readme = "README.md"
+version = "0.0.1"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+
+authors = [{name="devs_des1re", email="arjunbrij8811@gmail.com"}]
+maintainers = [{name="devs_des1re", email="arjunbrij8811@gmail.com"}]
+
+keywords = [
+    "app",
+    "macOS",
+    "windows",
+    "linux",
+    "flatpak",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "pip >= 21.2",
+    "requests >= 2.32",
+    "typer >= 0.16",
+]
+
+[project.scripts]
+pydetails = "pydetails.cli:app"
