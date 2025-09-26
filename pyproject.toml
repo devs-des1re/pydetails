@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "pydetails"
 description = "Gets the details of a python package from PyPI and TestPyPI"
 readme = "README.md"
-version = "0.0.1"
+version = "0.0.2"
 requires-python = ">=3.10"
 license = "MIT"
 license-files = ["LICENSE"]
@@ -40,6 +40,10 @@ dependencies = [
     "requests >= 2.32",
     "typer >= 0.16",
 ]
+
+[project.urls]
+Homepage = "https://github.com/devs-des1re/pydetails"
+Issues = "https://github.com/devs-des1re/pydetails/issues"
 
 [project.scripts]
 pydetails = "pydetails.cli:app"
